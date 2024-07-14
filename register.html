@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí - Website Du lịch</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Đăng kí tài khoản</h2>
+        <form id="registerForm" onsubmit="return validateForm()">
+            <label for="username">Tên đăng nhập:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+            
+            <label for="password">Mật khẩu:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <input type="submit" value="Đăng kí">
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
