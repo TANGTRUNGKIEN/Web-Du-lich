@@ -26,6 +26,4 @@ function validateForm() {
     // Nếu thông tin hợp lệ, cho phép submit form
     message.innerHTML = "Đăng kí thành công!";
     return true;
-
-    // 
 }
