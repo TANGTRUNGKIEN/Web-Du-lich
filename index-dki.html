@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký lái thử xe VinFast</title>
+    <link rel="stylesheet" href="signin2.css" />
+  </head>
+  <body>
+    <div style="display: flex">
+      <div style="width: 50%" class="images-container">
+        <img src="image/img-sale02-01.jpg" alt="Ảnh xe VinFast" />
+        <img src="image/exterior-vf6-1.webp" alt="Ảnh xe VinFast" />
+      </div>
+      <div style="width: 50%">
+        <div class="container">
+          <img src="image/logo-xl.png" alt="VinFast Logo" class="logo" />
+          <h1>Đăng ký lái thử xe VinFast</h1>
+          <form id="registration-form">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone" required />
+            <label for="car-type">Lựa Chọn Mẫu Xe:</label>
+            <div>
+              <div>
+                <h3>Ô TÔ</h3>
+                <select id="model" name="model" required>
+                  <option value="VinFast Lux A2.0">VinFast Lux A2.0</option>
+                  <option value="VinFast Fadil">VinFast Fadil</option>
+                </select>
+              </div>
+
+              <div>
+                <h3>XE ĐIỆN</h3>
+                <select id="model" name="model" required>
+                  <option value="VinFast Klara">VinFast Klara</option>
+                  <option value="VinFast Ludo">VinFast Ludo</option></select
+                ><br />
+              </div>
+            </div>
+            <button type="submit">Đăng Ký Lái Thử</button>
+          </form>
+          <p id="message"></p>
+        </div>
+      </div>
+    </div>
+    <script src="appdki.js"></script>
+  </body>
+</html>

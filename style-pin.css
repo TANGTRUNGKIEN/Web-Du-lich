@@ -1,0 +1,134 @@
+#signin {
+    padding-left: 200px;
+}
+
+#nav-item {
+    padding-left: 150px;
+}
+
+#signin1 {
+    background-color: rgb(40, 122, 245);
+    color: white;
+    text-align: center;
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box-1{
+    width: 550px;
+    padding-left: 40px;
+}
+.pic-1{
+    padding-top: 50px;
+    width: 550px;
+    height: 350px;
+}
+
+.box-2{
+    padding-left: 150px;
+}
+
+.pic-2{
+    width: 620px;
+    height: 350px;
+}
+
+.bu-1{
+    background-color: rgb(40, 122, 245);
+    color: white;
+    text-align: center;
+    height: 50px;
+    width: 220px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+}
+.bu-2{
+    background-color: rgb(40, 122, 245);
+    color: white;
+    text-align: center;
+    height: 50px;
+    width: 280px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+}
+.bu-3{
+    border: solid 1px rgb(40, 122, 245);
+    background-color: white;
+    color: rgb(40, 122, 245);
+    text-align: center;
+    height: 50px;
+    width: 280px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.text-2{
+    font-size: 35px;
+}
+
+.box-3{
+    text-align: justify;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin: 20px;
+    width: 350px;
+    height: 160px;
+    border: none;
+    background-color: whitesmoke;
+    padding-right: 15px;
+    border-radius: 5px;
+}
+
+.box-4{
+    padding-left: 100px;
+    width: 500px;
+}
+
+.box-5{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.box-6{
+    padding-left: 250px;
+    width: 650px;
+}
+
+.pic-4{
+    padding-top: 50px;
+    width: 400px;
+}
+
+.box-7{
+    padding-left: 100px;
+
+}
+.box-9{
+    width: 315px;
+}
+.box-8{
+    padding-left: 200px;
+    width: 900px;
+}
+.bu-4{
+    background-color: rgb(40, 122, 245);
+    color: white;
+    text-align: center;
+    height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+}

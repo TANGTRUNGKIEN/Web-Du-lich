@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#signin {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#signin h1 {
+  margin-bottom: 20px;
+}
+#signin input {
+  margin-bottom: 5px;
+}
+
+.w-100 {
+  width: 100%;
+  height: 30px;
+}
+
+#email:focus,
+#password:focus {
+  outline-color: blue;
+}
+
+#email,
+#password {
+  border: 1px solid black;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  height: 35px;
+}
+#remember {
+  margin-left: 45px;
+}
+.remember {
+  margin-bottom: 20px;
+}
+.no-acc {
+  margin: 10px 0;
+  text-align: center;
+}
+
+
+

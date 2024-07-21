@@ -1,0 +1,58 @@
+.item-pic {
+  width: 700px;
+  height: 300px;
+}
+item-text {
+  padding-bottom: 20px;
+}
+button {
+  padding: 15px 50px;
+  background-color: rgb(40, 122, 245);
+  color: white;
+  border: none;
+  border-radius: 5px !important;
+}
+.pin1 {
+  width: 50%;
+}
+.pin2 {
+  width: 50%;
+}
+.pin-pic {
+  width: 510px;
+  height: 343px;
+  justify-content: center;
+  padding: 0px 0px 50px 25px;
+}
+.pin-pic1 {
+  width: 630px;
+  height: 612px;
+}
+.box1 {
+  width: 50%;
+  text-align: left;
+}
+.box2 {
+  width: 50%;
+}
+.pic3 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+a {
+  text-decoration: none !important;
+}
+#signin {
+  padding-left: 200px;
+}
+#nav-item {
+  padding-left: 150px;
+}
+#signin1 {
+  background-color: rgb(40, 122, 245);
+  color: white;
+  text-align: center;
+  height: 45px;
+  width: 150px;
+  border-radius: 5px;
+}

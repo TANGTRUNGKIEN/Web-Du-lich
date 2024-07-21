@@ -1,0 +1,70 @@
+.electric-scooter-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.electric-scooter-image img {
+  border-radius: 35px;
+  margin: 25px 10px 25px 10px;
+  width: 100%;
+}
+
+.electric-scooter-info {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.electric-scooter-info h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.electric-scooter-info p,
+.electric-scooter-info ul {
+  margin-bottom: 10px;
+}
+
+.electric-scooter-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.electric-scooter-info li {
+  margin-bottom: 5px;
+}
+
+.electric-scooter-info button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.electric-scooter-info button:hover {
+  background-color: #0056b3;
+}
+
+.anhslide {
+  width: 100%;
+}
+#signin {
+  padding-left: 200px;
+}
+#nav-item {
+  padding-left: 150px;
+}
+#signin1 {
+  background-color: rgb(40, 122, 245);
+  color: white;
+  text-align: center;
+  height: 45px;
+  width: 150px;
+  border-radius: 5px;
+}
+a {
+  text-decoration: none !important;
+}
