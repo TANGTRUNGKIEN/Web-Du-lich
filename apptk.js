@@ -1,12 +1,22 @@
-const loginform = document.getElementById("signin");
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
-loginform.addEventListener("submit", function(){
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    alert("email: " + email + "\npassword: " + password);
-    document.write(email + " " + password);
-}); 
+const auth = getAuth();
 
-document.getElementById("w-100").addEventListener("mousemove", function(){
-    document.getElementById("w-100").innerHTML = "Đăng nhập";
-})
+const loginForm = document.getElementById('signin');
+
+loginForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  console.log("đăng nhập");
+  try {
+    const userCredential = await signInWithEmailAndPassword(auth, email, password);
+    const user = userCredential.user;
+    localStorage.setItem('loggedInUser', JSON.stringify(user));
+    alert(`Đăng nhập thành công! User ID: ${ user.uid }`);
+    window.location.href = '/index-gt.html'
+  } catch (error) {
+    alert(`Đăng nhập thất bại. Lỗi: ${ error.message }`);
+  }
+});

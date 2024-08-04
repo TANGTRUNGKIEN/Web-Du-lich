@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
   
     form.addEventListener("submit", function(event) {
         event.preventDefault();
-        
         const formData = new FormData(form);
         const data = {};
         formData.forEach(function(value, key) {
