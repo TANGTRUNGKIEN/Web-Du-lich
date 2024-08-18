@@ -3,41 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>Bảng điều khiển quản trị</title>
     <link rel="stylesheet" href="admin.css">
 </head>
 <body>
     <div class="sidebar">
         <h2>Bảng điều khiển quản trị</h2>
         <ul>
-            <li><a href="#bảng điều khiển ">Bảng điều khiển</a></li>
-            <li><a href="#người dùng">Người dùng</a></li>
-            <li><a href="#nội dung">Nội dung</a></li>
-            <li><a href="#báo cáo">Báo cáo</a></li>
+            <li><a href="#" class="nav-link active" data-section="dashboard">Bảng điều khiển</a></li>
+            <li><a href="#" class="nav-link" data-section="users">Người dùng</a></li>
+            <li><a href="#" class="nav-link" data-section="settings">Cài đặt</a></li>
+            <li><a href="#" class="nav-link" data-section="reports">Báo cáo</a></li>
+            <li><a href="#" class="nav-link" data-section="logout">Đăng xuất</a></li>
         </ul>
     </div>
+
     <div class="main-content">
         <header>
-            <h1>Chào mừng bạn đến với Bảng điều khiển quản trị</h1>
-            <button id="đăngxuấtButton">Đăng Xuất</button>
+            <h1 id="sectionTitle">Bảng điều khiển</h1>
+            <button id="toggleSidebar">☰</button>
         </header>
-        <section id="bảng điều khiển">
-            <h2>Bảng điều khiển</h2>
-            <p>Tổng quan về hoạt động và thống kê trang web.</p>
-        </section>
-        <section id="người dùng">
-            <h2>Quản lý người dùng</h2>
-            <p>Danh sách người dùng và tùy chọn quản lý người dùng.</p>
-        </section>
-        <section id="nội dung">
-            <h2>Quản lý nội dung</h2>
-            <p>Tùy chọn để quản lý nội dung trang.</p>
-        </section>
-        <section id="báo cáo">
-            <h2>Báo cáo</h2>
-            <p>Xem và tạo báo cáo.</p>
-        </section>
+
+        <div class="content">
+            <!-- Dashboard Section -->
+            <section id="dashboard" class="active-section">
+                <h2>Chào mừng bạn đến với Bảng điều khiển</h2>
+                <p>Tại đây bạn có thể tìm thấy tổng quan về số liệu thống kê và hoạt động của hệ thống.</p>
+                <!-- Add charts, stats, etc. -->
+            </section>
+
+            <!-- Users Section -->
+            <section id="users">
+                <h2>Danh sách người dùng</h2>
+                <table id="userTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tên</th>
+                            <th>Email</th>
+                            <th>Vai trò</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Example row -->
+                        <tr>
+                            <td>1</td>
+                            <td>kiên</td>
+                            <td>kien@example.com</td>
+                            <td>Admin</td>
+                            <td>
+                                <button class="editBtn">Sửa</button>
+                                <button class="deleteBtn">Xóa</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Settings Section -->
+            <section id="settings">
+                <h2>Cài đặt</h2>
+                <p>Tại đây bạn có thể điều chỉnh cài đặt và tùy chọn hệ thống</p>
+                <!-- Add forms, settings controls, etc. -->
+            </section>
+
+            <!-- Reports Section -->
+            <section id="reports">
+                <h2>Báo cáo</h2>
+                <p>Xem báo cáo chi tiết và dữ liệu phân tích tại đây.</p>
+                <table id="reportsTable">
+                    <thead>
+                        <tr>
+                            <th>ID báo cáo</th>
+                            <th>Tiêu đề</th>
+                            <th>Ngày</th>
+                            <th>Tình trạng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Example row -->
+                        <tr>
+                            <td>101</td>
+                            <td>Doanh số hàng tháng</td>
+                            <td>2023-08-01</td>
+                            <td>Hoàn thành</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Logout Section -->
+            <section id="logout">
+                <h2>Đăng xuất</h2>
+                <p>Bạn có chắc chắn muốn đăng xuất không?</p>
+                <button id="logoutBtn">Đăng xuất</button>
+            </section>
+        </div>
     </div>
-    <script src="scripts.js"></script>
+
+    <script src="admin.js"></script>
 </body>
 </html>

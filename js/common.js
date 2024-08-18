@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (user) {
       console.log('Người dùng đã đăng nhập:', user.uid);
       $('#signin').hide();
-      $('signup').hide();
+      $('#signup').hide();
 
       $('#btn_info').show();
       $('#logoutButton').show();

@@ -1,3 +1,4 @@
+/* Style for the admin dashboard, including sections and tables */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,16 +7,17 @@ body {
 }
 
 .sidebar {
-    width: 250px;
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    padding: 20px;
+    width: 225px;
+    background-color: #333;
+    color: #fff;
     height: 100vh;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: fixed;
 }
 
 .sidebar h2 {
-    margin-top: 0;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .sidebar ul {
@@ -28,48 +30,115 @@ body {
 }
 
 .sidebar ul li a {
-    color: #ecf0f1;
+    color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    display: block;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    text-align: center;
 }
 
-.sidebar ul li a:hover {
-    text-decoration: underline;
+.sidebar ul li a:hover, .sidebar ul li a.active {
+    background-color: #555;
 }
 
 .main-content {
-    flex: 1;
+    margin-left: 250px;
     padding: 20px;
+    width: 100%;
 }
 
 header {
+    background-color: #f4f4f4;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 0;
 }
 
-#đăngxuấtButton {
-    padding: 10px 20px;
-    background-color: #e74c3c;
-    border: none;
+header button {
+    background-color: #333;
     color: #fff;
+    border: none;
+    padding: 10px;
     cursor: pointer;
 }
 
-#đăngxuấtButton:hover {
-    background-color: #c0392b;
+header button:hover {
+    background-color: #555;
+}
+
+.content {
+    margin-top: 20px;
 }
 
 section {
-    margin-bottom: 40px;
+    display: none;
 }
 
-section h2 {
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+.active-section {
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.editBtn, .deleteBtn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.editBtn {
+    background-color: #4CAF50;
+}
+
+.editBtn:hover {
+    background-color: #45a049;
+}
+
+.deleteBtn {
+    background-color: #f44336;
+}
+
+.deleteBtn:hover {
+    background-color: #e53935;
+}
+
+#logoutBtn {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logoutBtn:hover {
+    background-color: #e53935;
 }
